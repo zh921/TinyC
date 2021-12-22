@@ -17,6 +17,7 @@ int readint(char *prompt) {
 	return i;
 }
 
+// 将所有 C 语言支持、但 TinyC 不支持的关键词全部 define 成空名称，这样来保证 gcc 和 TinyC 编译器的效果差不多。利用 gcc 编译的目的是为了测试和对比 TinyC 编译器的编译结果。
 #define auto
 #define short
 #define long
